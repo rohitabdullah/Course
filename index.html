@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberCourse | Premium Tech Education</title>
+    <meta name="description" content="Master Cybersecurity and Python Programming with our premium courses. Zero to Hero in 100 Days.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Cyber<span>Course</span></a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="courses.html" class="btn btn-primary">Enroll Now</a>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content text-center">
+                <h1 class="fade-in-up">Master the Future of <br><span class="text-gradient">Tech & Security</span></h1>
+                <p class="fade-in-up" style="animation-delay: 0.2s; max-width: 600px; margin: 20px auto; color: var(--text-muted);">
+                    Premium courses designed to take you from beginner to expert. 
+                    Hands-on labs, lifetime access, and dedicated support.
+                </p>
+                <div class="hero-btns fade-in-up" style="animation-delay: 0.4s;">
+                    <a href="#courses" class="btn btn-primary">Explore Courses</a>
+                    <a href="about.html" class="btn btn-outline" style="margin-left: 15px;">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Background Animation Elements (CSS only for simplicity/performance) -->
+        <div class="hero-bg-glow"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="grid grid-3">
+                <div class="glass-card feature-box fade-in-up">
+                    <div class="icon-box">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <h3>Lifetime Access</h3>
+                    <p>Pay once, learn forever. Get unlimited access to all course materials and future updates.</p>
+                </div>
+                <div class="glass-card feature-box fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="icon-box">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <h3>Telegram Support</h3>
+                    <p>Join our exclusive community. Get 24/7 support from mentors and fellow students.</p>
+                </div>
+                <div class="glass-card feature-box fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="icon-box">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Hands-on Labs</h3>
+                    <p>Don't just watch. Do. Practice with real-world projects and virtual labs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses-preview">
+        <div class="container">
+            <div class="section-header text-center" style="margin-bottom: 60px;">
+                <h2 class="text-gradient fade-in-up">Premium Courses</h2>
+                <p class="fade-in-up" style="color: var(--text-muted);">Choose your path to mastery</p>
+            </div>
+
+            <div class="grid grid-2">
+                <!-- Course 1 -->
+                <div class="glass-card course-card fade-in-up">
+                    <div class="course-image">
+                        <div class="placeholder-img cyber-img">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <span class="badge">Best Seller</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>Cybersecurity <br><span>Beginner to Advanced</span></h3>
+                        <div class="course-meta flex">
+                            <span><i class="far fa-clock"></i> 60+ Hours</span>
+                            <span><i class="fas fa-signal"></i> All Levels</span>
+                        </div>
+                        <p>Master ethical hacking, network security, and cyber defense strategies.</p>
+                        <div class="course-actions flex-between">
+                            <a href="course-details.html?course=cyber" class="btn btn-outline">View Details</a>
+                            <a href="payment.html?course=cyber" class="btn btn-primary">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="glass-card course-card fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="course-image">
+                        <div class="placeholder-img python-img">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <span class="badge">Trending</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>Python Programming <br><span>Zero to Hero</span></h3>
+                        <div class="course-meta flex">
+                            <span><i class="far fa-clock"></i> 100 Days</span>
+                            <span><i class="fas fa-signal"></i> Beginner</span>
+                        </div>
+                        <p>The complete Python bootcamp. Web dev, data science, and automation.</p>
+                        <div class="course-actions flex-between">
+                            <a href="course-details.html?course=python" class="btn btn-outline">View Details</a>
+                            <a href="payment.html?course=python" class="btn btn-primary">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="courses.html" class="btn btn-outline">View All Courses</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Cyber<span>Course</span></h3>
+                    <p>Empowering the next generation of tech leaders with premium education.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> support@cybercourse.com</li>
+                        <li><i class="fab fa-telegram"></i> @CyberCourseBot</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Tech City, Digital World</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CyberCourse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

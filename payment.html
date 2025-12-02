@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Payment | CyberCourse</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Cyber<span>Course</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle"><i class="fas fa-moon"></i></button>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="payment-section">
+        <div class="container">
+            <div class="glass-card payment-container fade-in-up">
+                <div class="payment-header text-center">
+                    <h2>Secure Checkout</h2>
+                    <p>Complete your purchase to start learning.</p>
+                </div>
+
+                <form action="success.html" class="payment-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="John Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="+880 1XXX XXXXXX" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="course">Select Course</label>
+                        <select id="course" required>
+                            <option value="cyber">Cybersecurity: Beginner to Advanced ($49.99)</option>
+                            <option value="python">Python Programming: Zero to Hero ($49.99)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Payment Method</label>
+                        <div class="payment-methods grid grid-3">
+                            <label class="method-card">
+                                <input type="radio" name="payment" value="bkash" checked>
+                                <div class="method-content">
+                                    <span>bKash</span>
+                                </div>
+                            </label>
+                            <label class="method-card">
+                                <input type="radio" name="payment" value="nagad">
+                                <div class="method-content">
+                                    <span>Nagad</span>
+                                </div>
+                            </label>
+                            <label class="method-card">
+                                <input type="radio" name="payment" value="rocket">
+                                <div class="method-content">
+                                    <span>Rocket</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="payment-summary">
+                        <div class="flex-between">
+                            <span>Subtotal</span>
+                            <span>$49.99</span>
+                        </div>
+                        <div class="flex-between">
+                            <span>Tax</span>
+                            <span>$0.00</span>
+                        </div>
+                        <div class="flex-between total">
+                            <span>Total</span>
+                            <span>$49.99</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary full-width">Submit Payment Request</button>
+                    <p class="text-center" style="margin-top: 15px; font-size: 0.8rem; color: var(--text-muted);">
+                        <i class="fas fa-lock"></i> 256-bit SSL Encrypted Payment
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2024 CyberCourse. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Pre-select course based on URL param
+        const urlParams = new URLSearchParams(window.location.search);
+        const course = urlParams.get('course');
+        if (course) {
+            const select = document.getElementById('course');
+            select.value = course;
+        }
+    </script>
+</body>
+
+</html>
